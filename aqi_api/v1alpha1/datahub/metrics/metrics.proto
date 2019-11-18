@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package ekko771.aqi.v1alpha1.datahub.metrics;
+
+option go_package = "github.com/ekko771/AQI-grpc-server/aqi_api/v1alpha1/datahub/metrics";
+import "aqi_api/v1alpha1/datahub/resources/metadata.proto";
+import "aqi_api/v1alpha1/datahub/common/metrics.proto";
+// Represents metric data of a container
+message AQIMetric {
+    metadata.ObjectMeta metadata = 1;
+    common.Sample sample = 2;
+}

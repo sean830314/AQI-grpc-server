@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package ekko771.aqi.v1alpha1.datahub.metrics;
+
+option go_package = "github.com/ekko771/AQI-grpc-server/aqi_api/v1alpha1/datahub/metrics";
+import "aqi_api/v1alpha1/datahub/metrics/metrics.proto";
+import "aqi_api/v1alpha1/datahub/resources/metadata.proto";
+message ListAQIMetricRequest {
+    repeated metadata.ObjectMeta metadata = 1;
+}
+
+message ListAQIMetricResponse {
+    repeated metrics.AQIMetric aqi_metrics = 1;
+}

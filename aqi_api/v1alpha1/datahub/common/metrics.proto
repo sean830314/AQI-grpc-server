@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package ekko771.aqi.v1alpha1.datahub.common;
+
+option go_package = "github.com/ekko771/api/aqi_api/v1alpha1/common/metrics";
+
+message Sample {
+    string aqi        = 1;
+    string co         = 2;
+    string co_8hr     = 3;
+    string no         = 4;
+    string no2        = 5;
+    string nox        = 6;
+    string o3         = 7;
+    string o3_8hr     = 8;
+    string pm10       = 9;
+    string pm10_avg   = 10;
+    string pm25      = 11;
+    string pm25_avg  = 12;
+    string so2        = 13;
+    string so2_avg    = 14;
+    string wind_direc = 15;
+    string wind_speed = 16;
+    string time       = 17;
+}

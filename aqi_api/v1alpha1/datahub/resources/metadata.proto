@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package ekko771.aqi.v1alpha1.datahub.metadata;
+
+option go_package = "github.com/ekko771/AQI-grpc-server/aqi_api/v1alpha1/resources/metadata";
+
+message ObjectMeta {
+    string County       = 1;
+    string Latitude     = 2;
+    string Longitude    = 3;
+    string Pollutant    = 4;
+    string SiteId       = 5;
+    string SiteName     = 6;
+    string Status       = 7;
+}

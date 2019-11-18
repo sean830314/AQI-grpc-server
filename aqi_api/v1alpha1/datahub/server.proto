@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package ekko771.aqi.v1alpha1.datahub;
+import "aqi_api/v1alpha1/datahub/metrics/service.proto";
+option go_package = "github.com/ekko771/AQI-grpc-server/aqi_api/v1alpha1/datahub";
+service AQIService {
+    rpc ListAQIMetrics(metrics.ListAQIMetricRequest) returns (metrics.ListAQIMetricResponse) {}
+}
