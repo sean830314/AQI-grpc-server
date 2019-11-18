@@ -1,0 +1,7 @@
+-e git://github.com/ekko771/AQI-grpc-server.git@b607a1d8e26598326753a27567f3c94156d130b7#egg=aqi_api
+grpcio==1.22.0
+grpcio-tools==1.22.0
+googleapis-common-protos==1.6.0
+docker==3.5.1
+influxdb==5.2.2
+PyYAML==5.1.2
