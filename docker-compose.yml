@@ -1,0 +1,13 @@
+
+version: '3'
+services:
+  influxdb:
+      ports:
+      - "8086:8086"
+      image: "influxdb"
+  aqi-grpc-server:
+      depends_on:
+      - influxdb
+      ports:
+      - "50051:50051"
+      image: "ekko771/aqi-grpc-server:v1"
