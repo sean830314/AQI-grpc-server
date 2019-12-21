@@ -4,7 +4,7 @@ AQI-GRPC-Server is a grpc server that can be used to access databases via grpc p
 
 1. Clone AQi-grpc-server repository
     ```shell
-    git clone https://github.com/ekko771/AQI-grpc-server.git
+    git clone https://github.com/sean830314/AQI-grpc-server.git
     ```
 2. setting your config file to etc
     ```shell
@@ -23,7 +23,7 @@ AQI-GRPC-Server is a grpc server that can be used to access databases via grpc p
 2. Execute build command
 
     ```shell
-    docker build -t ekko771/aqi-grpc-server:v1 .
+    docker build -t sean830314/aqi-grpc-server:v1 .
     ```
 ## Local Development with Docker Compose
 
